@@ -1,0 +1,25 @@
+bert:
+  model_path: "C:\\Users\\kvenk\\Desktop\\LJMU Thesis Topics\\CustomerSupport\\src\\models\\classifier_model"
+  classes:
+    - 'Billing and Payments'
+    - 'Customer Service'
+    - 'General Inquiry'
+    - 'Human Resources'
+    - 'IT Support'
+    - 'Product Support'
+    - 'Returns and Exchanges'
+    - 'Sales and Pre-Sales'
+    - 'Service Outages and Maintenance'
+    - 'Technical Support'
+
+rag:
+  docs_path: "C:\\Users\\kvenk\\Desktop\\LJMU Thesis Topics\\CustomerSupport\\src\\Dataset\\df_processed_aa_dataset-tickets.csv"
+  vectorstore_path: "C:\\Users\\kvenk\\Desktop\\LJMU Thesis Topics\\CustomerSupport"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+llm:
+  use_simplerllm: true
+  api_key: ""  # TODO: replace with your simplerLLM API key
+  #model: "gpt-5-mini"       # example model name for simplerLLM (replace as needed)
+  model: "gpt-4o"       # example model name for simplerLLM (replace as needed)
+  # Additional simplerLLM configuration (timeouts, endpoints) can be added here
